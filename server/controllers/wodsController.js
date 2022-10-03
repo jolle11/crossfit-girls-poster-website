@@ -9,13 +9,33 @@ const Wod = require("../models/wodModel");
 // @access  Public
 const getWods = asyncHandler(async (req, res) => {
 	const wods = await Wod.find();
+	const imperial = [];
+	const metric = [];
 
 	if (!wods) {
 		res.status(400);
 		throw new Error("Looks like the database is empty");
 	}
 
-	res.status(200).json(wods);
+	wods.map((wod) => {
+		switch (wod.units) {
+			case "imperial": {
+				imperial.push(wod);
+				break;
+			}
+			case "metric": {
+				metric.push(wod);
+				break;
+			}
+			case "none": {
+				imperial.push(wod);
+				metric.push(wod);
+				break;
+			}
+		}
+	});
+
+	res.status(200).json({ imperial: imperial, metric: metric });
 });
 
 // @desc    Get wods by unit type
