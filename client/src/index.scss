@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    height: 100%;
+    background: black;
+    color: white;
+    margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Public Sans', sans-serif;
+}
+h2,
+h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+p {
+    font-family: 'Gelasio', serif;
+}

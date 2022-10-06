@@ -1,0 +1,29 @@
+.toggler {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: auto;
+    padding-top: 15px;
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+    &__unit {
+        padding: 5px;
+        border-radius: 5px;
+        &--on {
+            background: white;
+            color: black;
+        }
+    }
+    &__button {
+        background: white;
+        border-radius: 50%;
+        border: none;
+        padding: 10px;
+        margin: 5px 5px;
+        cursor: pointer;
+    }
+}
