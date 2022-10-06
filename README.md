@@ -12,7 +12,7 @@ This is what I'm talking about ⬇️
 
 [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue) for the wod titles and types.
 
-[Public Sans](https://fonts.google.com/specimen/Public+Sans) FOR THE GIRLS
+[Public Sans](https://fonts.google.com/specimen/Public+Sans) for "THE GIRLS".
 
 Keep in mind the these fonts are the closest I was able to find in Google Fonts.
 

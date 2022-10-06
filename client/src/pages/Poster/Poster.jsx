@@ -19,7 +19,7 @@ const Poster = () => {
             setIsLoading(false);
         } else {
             axios
-                .get('http://localhost:5001/api/wods/')
+                .get('https://cf-girls-poster.herokuapp.com/api/wods')
                 .then((response) => {
                     setImperial(response.data.imperial);
                     setMetric(response.data.metric);
