@@ -4,7 +4,7 @@ This is my attempt to transform the crossfit girls poster into a webpage with a 
 
 This is what I'm talking about ⬇️
 
-<!-- ![crossfit-girls-poster](croossfit-girls-poster.png) -->
+![crossfit-girls-poster](croossfit-girls-poster.png)
 
 ## Fonts used:
 
