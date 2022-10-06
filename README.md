@@ -25,6 +25,7 @@ Keep in mind the these fonts are the closest I was able to find in Google Fonts.
 ## Created using:
 
 -   Vite ⚡️
--   React ⚛️
--   React Icons 🧬
--   Axios 🌐
+-   **M**ongoDB 🗄️
+-   **E**xpress 🥡
+-   **R**eact ⚛️
+-   **N**ode 🎒
