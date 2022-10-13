@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import { Hero, UnitsToggler, Wod } from '../../components';
+import { Hero, UnitsToggler, Wod, Footer } from '../../components';
 
 import './Poster.scss';
 
@@ -67,6 +67,7 @@ const Poster = () => {
                             return <Wod key={wod._id} wod={wod} />;
                         })}
                     </main>
+                    <Footer />
                 </div>
             );
             break;
@@ -84,6 +85,7 @@ const Poster = () => {
                             return <Wod key={wod._id} wod={wod} />;
                         })}
                     </main>
+                    <Footer />
                 </div>
             );
             break;
