@@ -19,7 +19,7 @@ const Poster = () => {
             setIsLoading(false);
         } else {
             axios
-                .get('https://cf-girls-poster.herokuapp.com/api/wods')
+                .get('https://crossfit-girls-poster-website-production.up.railway.app/api/wods')
                 .then((response) => {
                     setImperial(response.data.imperial);
                     setMetric(response.data.metric);
