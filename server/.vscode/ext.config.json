@@ -1,0 +1,17 @@
+{
+    "disabled": [
+        "naumovs.color-highlight",
+        "formulahendry.auto-rename-tag",
+        "docsmsft.docs-markdown",
+        "dsznajder.es7-react-js-snippets",
+        "bradlc.vscode-tailwindcss",
+        "Box-Of-Hats.bemhelper",
+        "Blackboxapp.blackbox",
+        "Zaczero.bootstrap-v4-snippets",
+        "ms-azuretools.vscode-docker",
+        "RapidAPI.vscode-rapidapi-client",
+        "styled-components.vscode-styled-components"
+    ],
+    "autoReload": true,
+    "openInNewWindow": true
+}
