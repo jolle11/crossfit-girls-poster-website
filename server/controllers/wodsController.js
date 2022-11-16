@@ -9,6 +9,7 @@ const Wod = require("../models/wodModel");
 // @access  Public
 const getWods = asyncHandler(async (req, res) => {
 	const wods = await Wod.find();
+	wods.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
 	const imperial = [];
 	const metric = [];
 
@@ -48,6 +49,7 @@ const getWodsByUnitType = asyncHandler(async (req, res) => {
 	}
 
 	const wods = await Wod.find();
+	wods.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
 
 	const wodsByUnitType = wods.map((wod) => {
 		if (wod.units === req.params.units.toLowerCase() || wod.units === "none") {
