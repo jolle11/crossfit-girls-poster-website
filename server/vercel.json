@@ -1,5 +1,5 @@
 {
-	"version": 1,
+	"version": 2,
 	"name": "crossfit-girls-poster",
 	"builds": [
 		{ "src": "server.js", "use": "@vercel/node" }
