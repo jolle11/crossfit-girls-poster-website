@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 
-import { Hero, UnitsToggler, Wod, Footer } from "../../components";
+import { Footer, Hero, UnitsToggler, Wod } from "../../components";
 
 import "./Poster.scss";
 

@@ -1,11 +1,13 @@
 .hero {
-    &__title {
-        font-size: 50px;
-        @media (min-width: 480px) {
-            font-size: 70px;
-        }
-        @media (min-width: 768px) {
-            font-size: 120px;
-        }
-    }
+	&__title {
+		font-size: 50px;
+
+		@media (min-width: 480px) {
+			font-size: 70px;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 120px;
+		}
+	}
 }
