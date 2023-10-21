@@ -1,8 +1,8 @@
-const asyncHandler = require("express-async-handler");
+const asyncHandler = require('express-async-handler');
 
-const { capitalizeFirstLetter } = require("../middleware/capitalizer");
+const { capitalizeFirstLetter } = require('../middleware/capitalizer');
 
-const Wod = require("../models/wodModel");
+const Wod = require('../models/wodModel');
 
 // @desc    Get wods
 // @route   GET /api/wods
@@ -15,20 +15,20 @@ const getWods = asyncHandler(async (req, res) => {
 
 	if (!wods) {
 		res.status(400);
-		throw new Error("Looks like the database is empty");
+		throw new Error('Looks like the database is empty');
 	}
 
 	wods.map((wod) => {
 		switch (wod.units) {
-			case "imperial": {
+			case 'imperial': {
 				imperial.push(wod);
 				break;
 			}
-			case "metric": {
+			case 'metric': {
 				metric.push(wod);
 				break;
 			}
-			case "none": {
+			case 'none': {
 				imperial.push(wod);
 				metric.push(wod);
 				break;
@@ -43,23 +43,23 @@ const getWods = asyncHandler(async (req, res) => {
 // @route   GET /api/wods/:units
 // @access  Public
 const getWodsByUnitType = asyncHandler(async (req, res) => {
-	if (req.params.units !== "imperial" && req.params.units !== "metric") {
+	if (req.params.units !== 'imperial' && req.params.units !== 'metric') {
 		res.status(400);
-		throw new Error("Use imperial or metric");
+		throw new Error('Use imperial or metric');
 	}
 
 	const wods = await Wod.find();
 	wods.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
 
 	const wodsByUnitType = wods.map((wod) => {
-		if (wod.units === req.params.units.toLowerCase() || wod.units === "none") {
+		if (wod.units === req.params.units.toLowerCase() || wod.units === 'none') {
 			return wod;
 		}
 	});
 
 	if (!wods) {
 		res.status(400);
-		throw new Error("Looks like the database is empty");
+		throw new Error('Looks like the database is empty');
 	}
 
 	res.status(200).json(wodsByUnitType);
@@ -76,7 +76,7 @@ const getWod = asyncHandler(async (req, res) => {
 
 	if (!wod.length) {
 		res.status(400);
-		throw new Error("Wod not found");
+		throw new Error('Wod not found');
 	}
 
 	res.status(200).json(wod);

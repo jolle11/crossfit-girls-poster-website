@@ -1,3 +1,3 @@
-import Poster from "./Poster/Poster";
+import Poster from './Poster/Poster';
 
 export { Poster };

@@ -1,0 +1,22 @@
+{
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 80,
+		"ignore": [ "*.jsx", "*.tsx" ]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	}
+}

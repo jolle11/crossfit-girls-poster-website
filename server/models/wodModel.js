@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const wodSchema = mongoose.Schema(
 	{
@@ -24,4 +24,4 @@ const wodSchema = mongoose.Schema(
 	},
 );
 
-module.exports = mongoose.model("Wod", wodSchema);
+module.exports = mongoose.model('Wod', wodSchema);
